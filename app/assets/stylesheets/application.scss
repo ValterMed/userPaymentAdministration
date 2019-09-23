@@ -1,0 +1,66 @@
+@import "theme";
+
+.payment-section {
+  margin: 10px;
+  border: 1px;
+  border-color: blueviolet;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  .main-title {
+    font-size: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  .payment-method {
+    border: 1px solid #B6B4B4;
+    height: 40px;
+    width: 140px;
+    font-size: 20px;
+    padding-left: 12px;
+    padding-right: 34px;
+    margin-right: 20px;
+  }
+  .check-coupon {
+    margin-bottom: 20px;
+    color: gray;
+  }
+  .button {
+    border: 1px solid #BE5EFC;
+    background-color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    height: 44px;
+    font-size: 20px;
+    color: #BE5EFC;
+  }
+  .payment-title {
+    font-size: 20px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+  }
+  .images {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    .js-card-container {
+      background-color: white;
+      border: 1px solid #BE5EFC;
+      margin-right: 15px;
+      width:  88px;
+      height: 60px;
+      .hide {
+        display: none;
+      }
+      .image-card {
+        margin: 10px;
+        width:  68px;
+        height: 40px;
+      }
+    }
+  }
+}

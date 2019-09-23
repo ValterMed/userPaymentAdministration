@@ -1,0 +1,33 @@
+<% text = "¿Tienes un cupón de descuento?" %>
+<% message = "Tu cupón ha sido aplicado." %>
+<% subtitle = "Elige tu método de pago" %>
+<div class = "payment-section">
+  <div class = "main-title">
+    <%= label(:post, :title, text) %>
+  </div>
+  <div class = "coupon-information">
+    <%= text_field(:post, :title, class: "payment-method", placeholder: "HOMIE_50") %>
+    <%= submit_tag("Eliminar", class: "button") %>
+    <div class="check-coupon">
+      <%= image_tag("Check.png", alt: "check", class: "image-check") %>
+      <%= label(:post, :title, message) %>
+    </div>
+  </div>
+  <div class="payment-title">
+    <%= label(:post, :title, subtitle) %>
+  </div>
+  <div class="images">
+    <div class = "js-card-container js-card">
+      <%= image_tag("purple_card.png", alt: "card", class: "js-purple-card image-card", onclick: "whiteCard()") %>
+      <%= image_tag("white_card.png", alt: "card", class: "js-white-card image-card hide") %>
+    </div>
+    <div class = "js-card-container js-oxxo">
+      <%= image_tag("purple_oxxo.png", alt: "oxxo", class: "js-purple-oxxo image-card", onclick: "whiteOxxo()") %>
+      <%= image_tag("white_oxxo.png", alt: "oxxo", class: "js-white-oxxo image-card hide") %>
+    </div>
+    <div class = "js-card-container js-spei">
+      <%= image_tag("purple_spei.png", alt: "spei", class: "js-purple-spei image-card", onclick: "whiteSpei()") %>
+      <%= image_tag("white_spei.png", alt: "spei", class: "js-white-spei image-card hide") %>
+    </div>
+  </div>
+</div>
