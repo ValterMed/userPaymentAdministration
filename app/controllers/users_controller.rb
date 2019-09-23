@@ -8,6 +8,9 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def payment_method
+  end
+
   def search
     users = User.search_coincidence(params[:word])
     if users.any?

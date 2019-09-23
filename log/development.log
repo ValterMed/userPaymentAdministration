@@ -12792,3 +12792,103 @@ Completed 200 OK in 46ms (Views: 42.3ms | MongoDB: 0.0ms)
 
 MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x47408526028680 type=uuid data=0x0484aa44596a454f...>}]}
 MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.001s
+Overwriting existing field email in class User.
+Started GET "/users/payment_method" for 127.0.0.1 at 2019-09-23 16:38:40 -0500
+Processing by UsersController#payment_method as HTML
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47388203884340 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47388203816360 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-09-23 21:38:40 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.002283017>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 | user_administration_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5d82756ab3b8bc0b3e088493')}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x47388203789700 type=uuid data=0x0f67e377ae2a41d7...>}}
+MONGODB | localhost:27017 | user_administration_development.find | SUCCEEDED | 0.000s
+  Rendering users/payment_method.html.erb within layouts/application
+  Rendered users/payment_method.html.erb within layouts/application (413.6ms)
+Completed 200 OK in 470ms (Views: 449.1ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/payment_method" for 127.0.0.1 at 2019-09-23 16:44:15 -0500
+Processing by UsersController#payment_method as HTML
+MONGODB | localhost:27017 | user_administration_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5d82756ab3b8bc0b3e088493')}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x47388203789700 type=uuid data=0x0f67e377ae2a41d7...>}}
+MONGODB | localhost:27017 | user_administration_development.find | SUCCEEDED | 0.001s
+  Rendering users/payment_method.html.erb within layouts/application
+  Rendered users/payment_method.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 43ms (Views: 38.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/sdfasdf" for 127.0.0.1 at 2019-09-23 16:45:00 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/sdfasdf"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2019-09-23 16:45:14 -0500
+Processing by UsersController#index as HTML
+MONGODB | localhost:27017 | user_administration_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5d82756ab3b8bc0b3e088493')}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x47388203789700 type=uuid data=0x0f67e377ae2a41d7...>}}
+MONGODB | localhost:27017 | user_administration_development.find | SUCCEEDED | 0.000s
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 30.1ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/payment_method" for 127.0.0.1 at 2019-09-23 16:45:22 -0500
+Processing by UsersController#payment_method as HTML
+MONGODB | localhost:27017 | user_administration_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5d82756ab3b8bc0b3e088493')}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x47388203789700 type=uuid data=0x0f67e377ae2a41d7...>}}
+MONGODB | localhost:27017 | user_administration_development.find | SUCCEEDED | 0.000s
+  Rendering users/payment_method.html.erb within layouts/application
+  Rendered users/payment_method.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 36ms (Views: 32.8ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/payment_method" for 127.0.0.1 at 2019-09-23 16:46:25 -0500
+Overwriting existing field email in class User.
+Processing by UsersController#payment_method as HTML
+MONGODB | localhost:27017 | user_administration_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5d82756ab3b8bc0b3e088493')}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x47388203789700 type=uuid data=0x0f67e377ae2a41d7...>}}
+MONGODB | localhost:27017 | user_administration_development.find | SUCCEEDED | 0.000s
+  Rendering users/payment_method.html.erb within layouts/application
+  Rendered users/payment_method.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 45ms (Views: 39.7ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/payment_method" for 127.0.0.1 at 2019-09-23 16:47:56 -0500
+Overwriting existing field email in class User.
+Processing by UsersController#payment_method as HTML
+MONGODB | localhost:27017 | user_administration_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5d82756ab3b8bc0b3e088493')}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x47388203789700 type=uuid data=0x0f67e377ae2a41d7...>}}
+MONGODB | localhost:27017 | user_administration_development.find | SUCCEEDED | 0.001s
+  Rendering users/payment_method.html.erb within layouts/application
+  Rendered users/payment_method.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 35ms (Views: 28.0ms | MongoDB: 0.0ms)
+
+
+MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x47388203789700 type=uuid data=0x0f67e377ae2a41d7...>}]}
+MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
